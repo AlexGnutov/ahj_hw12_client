@@ -1,0 +1,76 @@
+.container {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.news-block-container {
+  position: relative;
+}
+.renew-button {
+  border: none;
+  position: relative;
+  left: 400px;
+}
+.news-card {
+  display: flex;
+  width: 400px;
+  min-height: 120px;
+  padding: 10px;
+}
+.news-img {
+  width: 100px;
+  height: 100px;
+}
+.news-content {
+  width: 300px;
+  margin-left: 20px;
+}
+.news-header {
+  margin: 0;
+}
+.pre-load h3,
+.pre-load p,
+.pre-load img {
+  color: darkgray;
+  background-color: darkgray;
+  animation-name: pulsed-color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.not-loaded-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-loaded-text {
+  padding: 30px;
+  width: 300px;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+@keyframes pulsed-color {
+  0% {
+    color: darkgray;
+    background-color: darkgray;
+  }
+  50% {
+    color: lightgrey;
+    background-color: lightgray;
+  }
+  100% {
+    color: darkgray;
+    background-color: darkgray;
+  }
+}
